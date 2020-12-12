@@ -1,0 +1,111 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="kikimr\public\api\grpc\draft\dummy.proto" />
+    <None Remove="kikimr\public\api\grpc\draft\persqueue.proto" />
+    <None Remove="kikimr\public\api\grpc\draft\ydb_clickhouse_internal_v1.proto" />
+    <None Remove="kikimr\public\api\grpc\draft\ydb_experimental_v1.proto" />
+    <None Remove="kikimr\public\api\grpc\draft\ydb_persqueue_v1.proto" />
+    <None Remove="kikimr\public\api\grpc\draft\ydb_s3_internal_v1.proto" />
+    <None Remove="kikimr\public\api\grpc\draft\ydb_yql_internal.proto" />
+    <None Remove="kikimr\public\api\grpc\ydb_cms_v1.proto" />
+    <None Remove="kikimr\public\api\grpc\ydb_coordination_v1.proto" />
+    <None Remove="kikimr\public\api\grpc\ydb_discovery_v1.proto" />
+    <None Remove="kikimr\public\api\grpc\ydb_export_v1.proto" />
+    <None Remove="kikimr\public\api\grpc\ydb_import_v1.proto" />
+    <None Remove="kikimr\public\api\grpc\ydb_monitoring_v1.proto" />
+    <None Remove="kikimr\public\api\grpc\ydb_operation_v1.proto" />
+    <None Remove="kikimr\public\api\grpc\ydb_rate_limiter_v1.proto" />
+    <None Remove="kikimr\public\api\grpc\ydb_scheme_v1.proto" />
+    <None Remove="kikimr\public\api\grpc\ydb_scripting_v1.proto" />
+    <None Remove="kikimr\public\api\grpc\ydb_table_v1.proto" />
+    <None Remove="kikimr\public\api\protos\draft\persqueue.proto" />
+    <None Remove="kikimr\public\api\protos\draft\persqueue_error_codes.proto" />
+    <None Remove="kikimr\public\api\protos\persqueue_error_codes_v1.proto" />
+    <None Remove="kikimr\public\api\protos\validation\validation.proto" />
+    <None Remove="kikimr\public\api\protos\ydb_clickhouse_internal.proto" />
+    <None Remove="kikimr\public\api\protos\ydb_cms.proto" />
+    <None Remove="kikimr\public\api\protos\ydb_common.proto" />
+    <None Remove="kikimr\public\api\protos\ydb_coordination.proto" />
+    <None Remove="kikimr\public\api\protos\ydb_discovery.proto" />
+    <None Remove="kikimr\public\api\protos\ydb_experimental.proto" />
+    <None Remove="kikimr\public\api\protos\ydb_export.proto" />
+    <None Remove="kikimr\public\api\protos\ydb_import.proto" />
+    <None Remove="kikimr\public\api\protos\ydb_issue_message" />
+    <None Remove="kikimr\public\api\protos\ydb_issue_message.proto" />
+    <None Remove="kikimr\public\api\protos\ydb_monitoring.proto" />
+    <None Remove="kikimr\public\api\protos\ydb_operation.proto" />
+    <None Remove="kikimr\public\api\protos\ydb_persqueue_cluster_discovery.proto" />
+    <None Remove="kikimr\public\api\protos\ydb_persqueue_v1.proto" />
+    <None Remove="kikimr\public\api\protos\ydb_query_stats.proto" />
+    <None Remove="kikimr\public\api\protos\ydb_rate_limiter.proto" />
+    <None Remove="kikimr\public\api\protos\ydb_s3_internal.proto" />
+    <None Remove="kikimr\public\api\protos\ydb_scheme.proto" />
+    <None Remove="kikimr\public\api\protos\ydb_scripting.proto" />
+    <None Remove="kikimr\public\api\protos\ydb_status_codes.proto" />
+    <None Remove="kikimr\public\api\protos\ydb_table.proto" />
+    <None Remove="kikimr\public\api\protos\ydb_value.proto" />
+    <None Remove="kikimr\public\api\protos\ydb_yql_internal.proto" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Google.Protobuf" Version="3.14.0" />
+    <PackageReference Include="Grpc.Core" Version="2.34.0" />
+    <PackageReference Include="Grpc.Tools" Version="2.34.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <!--<Protobuf Include="kikimr\public\api\grpc\draft\dummy.proto" GrpcServices="Client" />
+    <Protobuf Include="kikimr\public\api\grpc\draft\persqueue.proto" GrpcServices="Client" />
+    <Protobuf Include="kikimr\public\api\grpc\draft\ydb_clickhouse_internal_v1.proto" GrpcServices="Client" />
+    <Protobuf Include="kikimr\public\api\grpc\draft\ydb_experimental_v1.proto" GrpcServices="Client" />
+    <Protobuf Include="kikimr\public\api\grpc\draft\ydb_persqueue_v1.proto" GrpcServices="Client" />
+    <Protobuf Include="kikimr\public\api\grpc\draft\ydb_s3_internal_v1.proto" GrpcServices="Client" />
+    <Protobuf Include="kikimr\public\api\grpc\draft\ydb_yql_internal.proto" GrpcServices="Client" />-->
+    <Protobuf Include="kikimr\public\api\grpc\ydb_cms_v1.proto" GrpcServices="Client" />
+    <Protobuf Include="kikimr\public\api\grpc\ydb_coordination_v1.proto" GrpcServices="Client" />
+    <Protobuf Include="kikimr\public\api\grpc\ydb_discovery_v1.proto" GrpcServices="Client" />
+    <Protobuf Include="kikimr\public\api\grpc\ydb_export_v1.proto" GrpcServices="Client" />
+    <Protobuf Include="kikimr\public\api\grpc\ydb_import_v1.proto" GrpcServices="Client" />
+    <Protobuf Include="kikimr\public\api\grpc\ydb_monitoring_v1.proto" GrpcServices="Client" />
+    <Protobuf Include="kikimr\public\api\grpc\ydb_operation_v1.proto" GrpcServices="Client" />
+    <Protobuf Include="kikimr\public\api\grpc\ydb_rate_limiter_v1.proto" GrpcServices="Client" />
+    <Protobuf Include="kikimr\public\api\grpc\ydb_scheme_v1.proto" GrpcServices="Client" />
+    <Protobuf Include="kikimr\public\api\grpc\ydb_scripting_v1.proto" GrpcServices="Client" />
+    <Protobuf Include="kikimr\public\api\grpc\ydb_table_v1.proto" GrpcServices="Client" />
+    <!--<Protobuf Include="kikimr\public\api\protos\draft\persqueue.proto" GrpcServices="Client" />
+    <Protobuf Include="kikimr\public\api\protos\draft\persqueue_error_codes.proto" GrpcServices="Client" />-->
+    <Protobuf Include="kikimr\public\api\protos\persqueue_error_codes_v1.proto" GrpcServices="Client" />
+    <Protobuf Include="kikimr\public\api\protos\validation\validation.proto" GrpcServices="Client" />
+    <Protobuf Include="kikimr\public\api\protos\ydb_clickhouse_internal.proto" GrpcServices="Client" />
+    <Protobuf Include="kikimr\public\api\protos\ydb_cms.proto" GrpcServices="Client" />
+    <Protobuf Include="kikimr\public\api\protos\ydb_issue_message.proto" GrpcServices="Client" />
+    <Protobuf Include="kikimr\public\api\protos\ydb_common.proto" GrpcServices="Client" />
+    <Protobuf Include="kikimr\public\api\protos\ydb_coordination.proto" GrpcServices="Client" />
+    <Protobuf Include="kikimr\public\api\protos\ydb_discovery.proto" GrpcServices="Client" />
+    <Protobuf Include="kikimr\public\api\protos\ydb_experimental.proto" GrpcServices="Client" />
+    <Protobuf Include="kikimr\public\api\protos\ydb_export.proto" GrpcServices="Client" />
+    <Protobuf Include="kikimr\public\api\protos\ydb_import.proto" GrpcServices="Client" />
+    <Protobuf Include="kikimr\public\api\protos\ydb_monitoring.proto" GrpcServices="Client" />
+    <Protobuf Include="kikimr\public\api\protos\ydb_operation.proto" GrpcServices="Client" />
+    <Protobuf Include="kikimr\public\api\protos\ydb_persqueue_cluster_discovery.proto" GrpcServices="Client" />
+    <Protobuf Include="kikimr\public\api\protos\ydb_persqueue_v1.proto" GrpcServices="Client" />
+    <Protobuf Include="kikimr\public\api\protos\ydb_query_stats.proto" GrpcServices="Client" />
+    <Protobuf Include="kikimr\public\api\protos\ydb_rate_limiter.proto" GrpcServices="Client" />
+    <Protobuf Include="kikimr\public\api\protos\ydb_s3_internal.proto" GrpcServices="Client" />
+    <Protobuf Include="kikimr\public\api\protos\ydb_scheme.proto" GrpcServices="Client" />
+    <Protobuf Include="kikimr\public\api\protos\ydb_scripting.proto" GrpcServices="Client" />
+    <Protobuf Include="kikimr\public\api\protos\ydb_status_codes.proto" GrpcServices="Client" />
+    <Protobuf Include="kikimr\public\api\protos\ydb_table.proto" GrpcServices="Client" />
+    <Protobuf Include="kikimr\public\api\protos\ydb_value.proto" GrpcServices="Client" />
+    <Protobuf Include="kikimr\public\api\protos\ydb_yql_internal.proto" GrpcServices="Client" />
+  </ItemGroup>
+
+</Project>
