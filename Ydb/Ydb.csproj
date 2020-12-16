@@ -2,6 +2,9 @@
 
   <PropertyGroup>
     <TargetFramework>net5.0</TargetFramework>
+    <Authors>ChilikbayevAbay</Authors>
+    <Company>ChilikbayevAbay</Company>
+    <Description>Модели для работы с YandexDatabase YQL</Description>
   </PropertyGroup>
 
   <ItemGroup>
